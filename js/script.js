@@ -39,15 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach(link => {
       link.addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default navigation
+          event.preventDefault(); 
 
-          // Show spinner
           spinner.classList.add("show-spinner");
 
-          // Delay the navigation
           setTimeout(() => {
-              window.location.href = link.href; // Redirect to the clicked page
-          }, 1000); // 1 second delay
+              window.location.href = link.href; 
+          }, 1000); 
       });
   });
 });
