@@ -1,0 +1,60 @@
+main{
+    height: auto;
+    background-image: url(../images/contact.jpg);
+    }
+    
+    main h2{
+        margin-top: 70px;
+        padding-bottom: 120px;
+    }
+    
+
+.food-title {
+    color: var(--warning-color);
+    font-family: Pacifico, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.food-title::before,
+.food-title::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--warning-color);
+}
+
+.main-section .fa-envelope{
+    color: var(--warning-color);
+    margin-right: 8px;
+}
+.contact-item{
+    color: var(--warning-color);
+    font-family: Pacifico, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+}
+
+.contact-item::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--warning-color);
+}
+
+.message-btn{
+    background-color: var(--warning-color);
+    color: white;
+}
+.message-btn:hover{
+    border: 1px solid var(--warning-color);
+    background-color: white;
+    color: var(--warning-color);
+}
+
