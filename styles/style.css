@@ -44,6 +44,25 @@ main * {
     z-index: 100;
  }
     
+
+
+
+   .navbar{
+    transition: top 0.4s ease-in-out;
+    z-index: 1000;
+   
+
+   }
+  .fixed-nav {
+    position: fixed;
+    top: -10px; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  
 .navbar-brand{
     color: var(--warning-color);
     font-family: Nunito , sans-serif;
@@ -116,6 +135,7 @@ font-family: Heebo, sans-serif;
     animation: imgAnimate 40s linear infinite; 
 }
 
+
 @keyframes imgAnimate {
     from{
 transform: rotate(0deg);
@@ -124,7 +144,8 @@ transform: rotate(0deg);
         transform: rotate(360deg);
 
     }
-}
+} 
+
 .main-section{
     margin-top: 80px;
     margin-bottom: 50px;
@@ -426,26 +447,190 @@ padding-top: 2px;
     width: 30px;
     font-size: 22px;
     height: 40px;
-    border-radius: 30px 30px 0 0;
-}
-.chef-brand {
-    display: none;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+   
 }
 
-.chef-brand {
-    transform: scaleY(0);
-    transform-origin: top;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+.Chef .d-flex{
+margin-bottom: 10px;
 }
 
-.Chef .rounded:hover .chef-brand {
-    transform: scaleY(1);
-    opacity: 1;
-    height: auto;
+.chef-img {
+    transition: transform 0.3s ease-in-out; 
+    display: block; 
+  
+}
+
+
+.Chef .rounded:hover .chef-img{
+
+    transform: scale(1.1);
+
+}
+
+.testimonial{
+    margin-top: 100px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .carousel {
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1999px) {
+    .carousel {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+
+
+.test-img{
+    background-image: url(../images/client1.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-control-prev-icon ,.carousel-control-next-icon{
+    background-color: var(--warning-color);
+}
+.testimonial p{
+    color: #0F172B;
+}
+.test-img1{
+    background-image: url(../images/client2.jpg);
+}
+.test-img2{
+    background-image: url(../images/client3.jpg);
+}
+
+
+.footer{
+    margin-top: 100px;
+    background-color: #0F172B;
+}
+
+
+.footer-title {
+    color: var(--warning-color);
+    font-family: Pacifico, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px; 
+    font-size: 25px;
+}
+
+
+.footer-title::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--warning-color);
+}
+
+.footer .list-item::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer ul{
+    list-style: none;
+    color: white;
+    text-align: left;
+}
+
+.footer-list i{
+    margin-right: 15px;
+ 
+}
+
+.footer-list li{
+    line-height: 34px;
+}
+
+.footer-list-item li{
+    transition: letter-spacing 1s ease-in;
+}
+
+.footer-list-item li:hover{
+letter-spacing: 2px;
+}
+
+.footer-list .brand-icon {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+
+}
+
+.footer-list .brand-icon i{
+   margin-left: -4px;
+}
+.footer-list .brand-icon:hover{
+    border: 1px solid var(--warning-color);
+    color: #FEA116;
+}
+
+.footer-sign input{
+    border: 1px solid var(--warning-color);
+}
+.footer-sign button{
+    background-color: var(--warning-color);
+    border: 1px solid white;
+    transition: all .3s ease;
+}
+
+.footer-sign button:hover{
+    border: 1px solid var(--warning-color);
+    background-color: white;
+    color: var(--warning-color);
+}
+
+.con-2{
+    border-top: 1px solid whitesmoke;
+    margin-top: 30px;
+    height: 140px;
+}
+.con-2 .li1{
+    border-right: 1px solid whitesmoke;
+    padding-right: 15px;
+
+}
+
+.con-2 .content{
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+.con-2{
+    text-align: center;
+    height: 160px;
+
+}   
+.con-2 ul{
+display: flex;
+justify-content: center;
+}
 }

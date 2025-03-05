@@ -1,0 +1,13 @@
+main{
+height: auto;
+background-image: url(../images/menu8.jpg);
+}
+
+main h2{
+    margin-top: 70px;
+    padding-bottom: 120px;
+}
+
+.about{
+    margin-top: 100px;
+}
